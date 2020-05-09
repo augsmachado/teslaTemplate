@@ -40,7 +40,7 @@
             <div class="col-md-6">
                 <div class="card-body text-white">
                     <h2 class="card-title">Base Specs</h2>
-                    <table style="font-size: 20px; width: 100%;">
+                    <table style="font-size: 20px; width: 75%;">
                         <tr>
                             <td>Acceleration 0-60 mph</td>
                             <td style="text-align: right;">1.9 sec</td>
@@ -145,33 +145,66 @@
                     <form class="needs-validation" novalidate style="max-width: 50%; margin:auto;">
                         <div class="form-row">
                             <div class="col-md-12 mb-3">
-                                <label for="validationCustom01">First name</label>
-                                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                <label for="validationCustom01">Full name</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Elon Musk" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-12 mb-3">
-                                <label for="validationCustom02">Last name</label>
-                                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                                <div class="valid-feedback">
-                                    Looks good!
+                                <label for="validationCustom02">Email address</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom03">Telephone</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="(00) 000000-0000" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid telephone number.
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                                <label for="validationCustom03">City</label>
-                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <label for="validationCustom04">City</label>
+                                <input type="text" class="form-control" id="validationCustom04" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="validationCustom04">State</label>
-                                <select class="custom-select" id="validationCustom04" required>
-                                <option selected disabled value="">Choose...</option>
-                                <option>...</option>
+                                <label for="validationCustom05">State</label>
+                                <select class="custom-select" id="validationCustom05" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>AC</option>
+                                    <option>AL</option>
+                                    <option>AP</option>
+                                    <option>AM</option>
+                                    <option>BA</option>
+                                    <option>CE</option>
+                                    <option>DF</option>
+                                    <option>ES</option>
+                                    <option>GO</option>
+                                    <option>MA</option>
+                                    <option>MG</option>
+                                    <option>MT</option>
+                                    <option>MS</option>
+                                    <option>PA</option>
+                                    <option>PB</option>
+                                    <option>PE</option>
+                                    <option>PI</option>
+                                    <option>PR</option>
+                                    <option>RJ</option>
+                                    <option>RN</option>
+                                    <option>RO</option>
+                                    <option>RR</option>
+                                    <option>RS</option>
+                                    <option>SC</option>
+                                    <option>SE</option>
+                                    <option>SP</option>
+                                    <option>TO</option>
                                 </select>
                                 <div class="invalid-feedback">
                                     Please select a valid state.
@@ -180,14 +213,14 @@
                         </div>
                         <div class="form-row">
                             <div class="col-md-12 mb-3">
-                                <label for="validationCustom05">Zip</label>
-                                <input type="text" class="form-control" id="validationCustom05" required>
+                                <label for="validationCustom06">Zip</label>
+                                <input type="text" class="form-control" id="validationCustom06" placeholder="00000-000" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid zip.
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Reserve Interest</button>
                     </form>
                 </div>
             </div>
@@ -196,16 +229,8 @@
 
 
 
-
-
-
-
-
-    
-    
-      
+    <!--  Start JavaScript for disabling form submissions if there are invalid fields -->
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {
             'use strict';
             window.addEventListener('load', function() {
@@ -223,9 +248,11 @@
             });
             }, false);
         })();
-    </script>
+    </script>    
+</body>
 
-    
 
-    
- </body>
+
+<footer class="text-white bg-danger" style="height: 30px; text-align: center; font-size: 18px;">
+    <p>© 2020 Tesla by Augs Machado</p>
+</footer>
