@@ -1,258 +1,317 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tesla Roadster: the quickest car in the world">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tesla Roadster: the quickest car in the world">
 
-    <title>Tesla Roadster</title>
+        <title>Tesla Roadster</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+    </head>
+
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger scrolling-navbar">
+        <a class="navbar-brand" href="#" target="_blank">
+            <img src="../img/logo.png" width="100" height="30" alt="Tesla Logotype">
+        </a>
+    </nav>
+
+
+    <body style="background-color: black;">
+        
+        <!-- Video cover page -->
+        <video autoplay loop id="teslaRoadsterComercial" width="100%">
+            <source src="../videos/teslaRoadsterCommercial.mp4" type="video/mp4">
+        </video>
+
+
+
+        <!-- Base specs card -->
+        <div class="card mb-3" style="max-width: 1920px; background-color: black;">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <img src="../img/airfoil.jpg" class="card-img" alt="Perspective of the airfoil">
+                </div>
+
+                <!-- Table base specs -->
+                <div class="col-md-6">
+                    <div class="card-body text-white">
+                        <h2 class="card-title">Base Specs</h2>
+                        <table style="font-size: 20px; width: 75%;">
+                            <tr>
+                                <td>Acceleration 0-60 mph</td>
+                                <td style="text-align: right;">1.9 sec</td>
+                            </tr>
+                            <tr>
+                                <td>Acceleration 0-100 mph</td>
+                                <td style="text-align: right;">4.2 sec</td>
+                            </tr>
+                            <tr>
+                                <td>Acceleration 1/4 mile</td>
+                                <td style="text-align: right;">8.8 sec</td>
+                            </tr>
+                            <tr>
+                                <td>Top Speed</td>
+                                <td style="text-align: right;">Over 250 mph</td>
+                            </tr>
+                            <tr>
+                                <td>Wheel Torque</td>
+                                <td style="text-align: right;">10,000 Nm</td>
+                            </tr><tr>
+                                <td>Mile Range</td>
+                                <td style="text-align: right;">620 miles</td>
+                            </tr>
+                            <tr>
+                                <td>Seating</td>
+                                <td style="text-align: right;">4</td>
+                            </tr>
+                            <tr>
+                                <td>Drive</td>
+                                <td style="text-align: right;">All-Wheel Drive</td>
+                            </tr>
+                            <tr>
+                                <td>Base Price</td>
+                                <td style="text-align: right;">$200,000</td>
+                            </tr>
+                            <tr>
+                                <td>Base Reservation</td>
+                                <td style="text-align: right;">$50,000</td>
+                            </tr>
+                            <tr>
+                                <td>Founders Series Price</td>
+                                <td style="text-align: right;">$250,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/roadster3.jpg" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/roadster3.jpg" alt="Chicago" width="1100" height="500">
+                </div>
+              
+                <div class="carousel-item">
+                    <img src="../img/roadster3.jpg" alt="Chicago" width="1100" height="500">
+                </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container-fluid">
+            <!-- Detail cards about the Tesla Roadster -->
+            <div class="card-deck">
+                <div class="card text-white" style="background-color: black;">
+                    <img src="../img/design.jpg" class="card-img-top" alt="Tesla Roadster in perspective of back to front">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Design for Performance and Aero Efficiency</h5>
+                        <p class="card-text text-left">As an all-eletric supercar, Roadster maximizes the potential of
+                            aerodynamic engeering - with record-setting performance and efficiency.
+                        </p>
+                    </div>
+                </div>
+                <div class="card text-white" style="background-color: black;">
+                    <img src="../img/interior.jpg" class="card-img-top" alt="Interior of the Tesla Roadster with leather benches in side perspective">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Interior</h5>
+                        <p class="card-text text-left">The fist supercar to set every performance record
+                            and still fit seating for four.
+                        </p>
+                    </div>
+                </div>
+                <div class="card text-white" style="background-color: black;">
+                    <img src="../img/glassroof.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Glass Roof</h5>
+                        <p class="card-text text-left"> A lightweight, removable Glass Roof stores in the trunk for an open-air,
+                            convertible driving experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- Video Roadster divider section page -->
+        <video autoplay loop id="roadsterLoopImperial" width="100%">
+            <source src="../videos/roadsterLoopImperial.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="card mb-3" style="max-width: 1920px; background-color: black;">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <img src="../img/airfoil.jpg" class="card-img" alt="Perspective of the airfoil">
+                </div>
+
+                <!-- Form to reserve the Tesla Roadster -->
+                <div class="col-md-6">
+                    <div class="card-body text-white">
+                        <form class="needs-validation" novalidate style="max-width: 50%; margin:auto;">
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom01">Full name</label>
+                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Elon Musk" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom02">Email address</label>
+                                    <input type="text" class="form-control" id="validationCustom02" placeholder="name@example.com" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">Telephone</label>
+                                    <input type="text" class="form-control" id="validationCustom03" placeholder="(00) 000000-0000" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid telephone number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom04">City</label>
+                                    <input type="text" class="form-control" id="validationCustom04" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom05">State</label>
+                                    <select class="custom-select" id="validationCustom05" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>AC</option>
+                                        <option>AL</option>
+                                        <option>AP</option>
+                                        <option>AM</option>
+                                        <option>BA</option>
+                                        <option>CE</option>
+                                        <option>DF</option>
+                                        <option>ES</option>
+                                        <option>GO</option>
+                                        <option>MA</option>
+                                        <option>MG</option>
+                                        <option>MT</option>
+                                        <option>MS</option>
+                                        <option>PA</option>
+                                        <option>PB</option>
+                                        <option>PE</option>
+                                        <option>PI</option>
+                                        <option>PR</option>
+                                        <option>RJ</option>
+                                        <option>RN</option>
+                                        <option>RO</option>
+                                        <option>RR</option>
+                                        <option>RS</option>
+                                        <option>SC</option>
+                                        <option>SE</option>
+                                        <option>SP</option>
+                                        <option>TO</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationCustom06">Zip</label>
+                                    <input type="text" class="form-control" id="validationCustom06" placeholder="00000-000" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Reserve Interest</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Start JavaScript for disabling form submissions if there are invalid fields -->
+        <script>
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    }, false);
+                });
+                }, false);
+            })();
+        </script>    
+    </body>
+
+
+
+    <footer class="text-white bg-danger" style="height: 30px; text-align: center; font-size: 18px;">
+        <p>© 2020 Tesla by Augs Machado</p>
+    </footer>
 
 </html>
-
-<!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger scrolling-navbar">
-    <a class="navbar-brand" href="#" target="_blank">
-        <img src="../img/logo.png" width="100" height="30" alt="Tesla Logotype">
-    </a>
-</nav>
-
-
-<body style="background-color: black;">
-    
-    <!-- Video cover page -->
-    <video autoplay loop id="teslaRoadsterComercial" width="100%">
-        <source src="../videos/teslaRoadsterCommercial.mp4" type="video/mp4">
-    </video>
-
-
-
-    <!-- Base specs card -->
-    <div class="card mb-3" style="max-width: 1920px; background-color: black;">
-        <div class="row no-gutters">
-            <div class="col-md-6">
-                <img src="../img/airfoil.jpg" class="card-img" alt="Perspective of the airfoil">
-            </div>
-
-            <!-- Table base specs -->
-            <div class="col-md-6">
-                <div class="card-body text-white">
-                    <h2 class="card-title">Base Specs</h2>
-                    <table style="font-size: 20px; width: 75%;">
-                        <tr>
-                            <td>Acceleration 0-60 mph</td>
-                            <td style="text-align: right;">1.9 sec</td>
-                        </tr>
-                        <tr>
-                            <td>Acceleration 0-100 mph</td>
-                            <td style="text-align: right;">4.2 sec</td>
-                        </tr>
-                        <tr>
-                            <td>Acceleration 1/4 mile</td>
-                            <td style="text-align: right;">8.8 sec</td>
-                        </tr>
-                        <tr>
-                            <td>Top Speed</td>
-                            <td style="text-align: right;">Over 250 mph</td>
-                        </tr>
-                        <tr>
-                            <td>Wheel Torque</td>
-                            <td style="text-align: right;">10,000 Nm</td>
-                        </tr><tr>
-                            <td>Mile Range</td>
-                            <td style="text-align: right;">620 miles</td>
-                        </tr>
-                        <tr>
-                            <td>Seating</td>
-                            <td style="text-align: right;">4</td>
-                        </tr>
-                        <tr>
-                            <td>Drive</td>
-                            <td style="text-align: right;">All-Wheel Drive</td>
-                        </tr>
-                        <tr>
-                            <td>Base Price</td>
-                            <td style="text-align: right;">$200,000</td>
-                        </tr>
-                        <tr>
-                            <td>Base Reservation</td>
-                            <td style="text-align: right;">$50,000</td>
-                        </tr>
-                        <tr>
-                            <td>Founders Series Price</td>
-                            <td style="text-align: right;">$250,000</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container-fluid">
-        <!-- Detail cards about the Tesla Roadster -->
-        <div class="card-deck">
-            <div class="card text-white" style="background-color: black;">
-                <img src="../img/design.jpg" class="card-img-top" alt="Tesla Roadster in perspective of back to front">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Design for Performance and Aero Efficiency</h5>
-                    <p class="card-text text-left">As an all-eletric supercar, Roadster maximizes the potential of
-                        aerodynamic engeering - with record-setting performance and efficiency.
-                    </p>
-                </div>
-            </div>
-            <div class="card text-white" style="background-color: black;">
-                <img src="../img/interior.jpg" class="card-img-top" alt="Interior of the Tesla Roadster with leather benches in side perspective">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Interior</h5>
-                    <p class="card-text text-left">The fist supercar to set every performance record
-                        and still fit seating for four.
-                    </p>
-                </div>
-            </div>
-            <div class="card text-white" style="background-color: black;">
-                <img src="../img/glassroof.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Glass Roof</h5>
-                    <p class="card-text text-left"> A lightweight, removable Glass Roof stores in the trunk for an open-air,
-                        convertible driving experience.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-
-    <!-- Video Roadster divider section page -->
-    <video autoplay loop id="roadsterLoopImperial" width="100%">
-        <source src="../videos/roadsterLoopImperial.mp4" type="video/mp4">
-    </video>
-
-
-    <div class="card mb-3" style="max-width: 1920px; background-color: black;">
-        <div class="row no-gutters">
-            <div class="col-md-6">
-                <img src="../img/airfoil.jpg" class="card-img" alt="Perspective of the airfoil">
-            </div>
-
-            <!-- Form to reserve the Tesla Roadster -->
-            <div class="col-md-6">
-                <div class="card-body text-white">
-                    <form class="needs-validation" novalidate style="max-width: 50%; margin:auto;">
-                        <div class="form-row">
-                            <div class="col-md-12 mb-3">
-                                <label for="validationCustom01">Full name</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Elon Musk" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="validationCustom02">Email address</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="name@example.com" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid email address.
-                                </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="validationCustom03">Telephone</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="(00) 000000-0000" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid telephone number.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <label for="validationCustom04">City</label>
-                                <input type="text" class="form-control" id="validationCustom04" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid city.
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="validationCustom05">State</label>
-                                <select class="custom-select" id="validationCustom05" required>
-                                    <option selected disabled value="">Choose...</option>
-                                    <option>AC</option>
-                                    <option>AL</option>
-                                    <option>AP</option>
-                                    <option>AM</option>
-                                    <option>BA</option>
-                                    <option>CE</option>
-                                    <option>DF</option>
-                                    <option>ES</option>
-                                    <option>GO</option>
-                                    <option>MA</option>
-                                    <option>MG</option>
-                                    <option>MT</option>
-                                    <option>MS</option>
-                                    <option>PA</option>
-                                    <option>PB</option>
-                                    <option>PE</option>
-                                    <option>PI</option>
-                                    <option>PR</option>
-                                    <option>RJ</option>
-                                    <option>RN</option>
-                                    <option>RO</option>
-                                    <option>RR</option>
-                                    <option>RS</option>
-                                    <option>SC</option>
-                                    <option>SE</option>
-                                    <option>SP</option>
-                                    <option>TO</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid state.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-12 mb-3">
-                                <label for="validationCustom06">Zip</label>
-                                <input type="text" class="form-control" id="validationCustom06" placeholder="00000-000" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid zip.
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Reserve Interest</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--  Start JavaScript for disabling form submissions if there are invalid fields -->
-    <script>
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-                }, false);
-            });
-            }, false);
-        })();
-    </script>    
-</body>
-
-
-
-<footer class="text-white bg-danger" style="height: 30px; text-align: center; font-size: 18px;">
-    <p>© 2020 Tesla by Augs Machado</p>
-</footer>
